@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "ProcessImageService.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7023"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 34324,
+      "useSSL": false
+    }
+  }
+}
